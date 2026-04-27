@@ -1,0 +1,16 @@
+{
+  "name": "blind-vote-monorepo",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend",
+    "contracts"
+  ],
+  "scripts": {
+    "contracts:compile": "npm run compile --workspace=contracts",
+    "contracts:node": "npm run node --workspace=contracts",
+    "contracts:deploy": "npm run deploy --workspace=contracts",
+    "backend:dev": "npm run dev --workspace=backend",
+    "frontend:dev": "npm run dev --workspace=frontend"
+  }
+}
