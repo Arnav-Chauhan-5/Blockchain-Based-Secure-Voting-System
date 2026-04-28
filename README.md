@@ -47,3 +47,55 @@ A full-stack decentralized application (dApp) for secure, transparent, and anony
 │   └── vite.config.ts      # Vite configuration
 ├── deployments/            # Deployment configurations
 └── package.json            # Root package.json
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm
+- MetaMask or another Web3 wallet
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd blockchain-based-secure-voting-system
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running the Application
+
+1. Start the local blockchain network:
+   ```bash
+   npm run contracts:node
+   ```
+   This starts a Hardhat node on `http://127.0.0.1:8545`.
+
+2. Deploy the smart contracts:
+   ```bash
+   npm run contracts:deploy
+   ```
+   This deploys the contracts to the local network.
+
+3. Start the backend server:
+   ```bash
+   npm run backend:dev
+   ```
+   The backend runs on `http://127.0.0.1:8787`.
+
+4. Start the frontend application:
+   ```bash
+   npm run frontend:dev
+   ```
+   The frontend runs on `http://127.0.0.1:5173`.
+
+5. Open your browser and navigate to `http://127.0.0.1:5173` to access the voting application.
+
+6. Connect your MetaMask wallet to the local network (RPC URL: `http://127.0.0.1:8545`, Chain ID: 31337).
