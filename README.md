@@ -4,7 +4,7 @@ A full-stack decentralized application (dApp) for secure, transparent, and anony
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 - **Blinded Commit-Reveal:** Votes are submitted as cryptographic hashes during the Commit phase, keeping choices hidden until the Reveal phase.  
 - **Gasless Transactions:** Implements a Relayer Service that sponsors gas fees for vote commitment using **EIP-712 structured data signing**.  
@@ -14,7 +14,7 @@ A full-stack decentralized application (dApp) for secure, transparent, and anony
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Blockchain Layer
 - Solidity – Smart contract logic  
@@ -32,14 +32,14 @@ A full-stack decentralized application (dApp) for secure, transparent, and anony
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```plaintext
 ├── contracts/      # Solidity contracts & Hardhat configuration
 ├── backend/        # Express server & Gasless Relayer logic
 └── frontend/       # React + TypeScript frontend application
 
-⚙️ Installation & Setup
+Installation & Setup
 
 Follow these steps to run the project locally:
 
@@ -65,7 +65,7 @@ npm run dev
 cd frontend
 npm install
 npm run dev
-📋 How It Works (Voting Flow)
+ How It Works (Voting Flow)
 Commit Phase
 
 The voter selects a candidate and generates a random secret.
@@ -88,11 +88,11 @@ Tally
 
 Once the reveal window closes, the final count is permanently recorded and displayed.
 
-🛡️ Security
+ Security
 Double Voting Protection: Each wallet address can commit only once.
 Privacy: Secret salt prevents vote guessing/rainbow table attacks.
 Relayer Security: Backend allowlist prevents unauthorized gas usage.
-👤 Author
+ Author
 
 Arnav Chauhan
 Full-Stack Developer & Blockchain Enthusiast
